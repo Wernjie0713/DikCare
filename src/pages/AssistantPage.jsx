@@ -79,7 +79,7 @@ function AssistantPage() {
           <div className="px-4 py-2 flex items-center space-x-4">
             <div className="w-16 h-16 rounded-full overflow-hidden bg-blue-100">
               <div className="w-full h-full flex items-center justify-center text-blue-500">
-                <img src="/robot.svg" className="h-10 w-10" alt="Robot assistant" />
+                <img src="./robot.svg" className="h-10 w-10" alt="Robot assistant" />
               </div>
             </div>
             <div>

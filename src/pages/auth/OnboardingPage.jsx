@@ -6,27 +6,21 @@ function OnboardingPage() {
     <MobileContainer>
       <div className="flex flex-col items-center justify-center px-6 py-8">
         {/* Doctor illustration */}
-        <div className="w-full h-60 bg-blue-100 rounded-xl flex justify-center items-center mb-8">
-          <img 
-            src="/images/consultation.png" 
-            alt="Doctor with patient" 
-            className="w-full h-full object-cover"
-            onError={(e) => {
-              e.target.onerror = null;
-              e.target.src = "https://placehold.co/400x300/e0f2fe/1e40af?text=Doctor+Consultation";
-            }}
-          />
+        <div className="mb-8 h-[200px] overflow-hidden rounded-xl">
+          <img src="./images/consultation.png" alt="Doctor consultation" className="w-full h-full object-cover" />
         </div>
 
         {/* Logo */}
-        <div className="flex items-center justify-center w-16 h-16 relative mb-2">
-          <img
-            src="/images/DikCare Logo.png"
-            alt="DikCare Logo"
-            className="w-full h-full object-contain"
-          />
+        <div className="flex flex-col items-center mb-8">
+          <div className="flex items-center justify-center w-16 h-16 relative mb-2">
+            <img
+              src="./images/DikCare Logo.png"
+              alt="DikCare Logo"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <h1 className="text-2xl font-bold text-gray-900">DikCare</h1>
         </div>
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">DikCare</h1>
         <p className="text-xl text-gray-600 mb-8">Your Health Companion</p>
 
         {/* Progress indicator */}
