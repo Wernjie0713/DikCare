@@ -27,7 +27,7 @@ function LoginPage() {
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center justify-center w-16 h-16 relative mb-2">
             <img
-              src="./images/DikCare Logo.png"
+              src="/DikCare/images/DikCare Logo.png"
               alt="DikCare Logo"
               className="w-full h-full object-contain"
             />
