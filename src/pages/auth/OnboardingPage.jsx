@@ -1,5 +1,7 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import MobileContainer from '../../components/common/MobileContainer';
+import { images } from '../../assets/imageImports';
 
 function OnboardingPage() {
   return (
@@ -7,14 +9,14 @@ function OnboardingPage() {
       <div className="flex flex-col items-center justify-center px-6 py-8">
         {/* Doctor illustration */}
         <div className="mb-8 h-[200px] overflow-hidden rounded-xl">
-          <img src="/DikCare/images/consultation.png" alt="Doctor consultation" className="w-full h-full object-cover" />
+          <img src={images.consultation} alt="Doctor consultation" className="w-full h-full object-cover" />
         </div>
 
         {/* Logo */}
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center justify-center w-16 h-16 relative mb-2">
             <img
-              src="/DikCare/images/DikCare Logo.png"
+              src={images.logo}
               alt="DikCare Logo"
               className="w-full h-full object-contain"
             />

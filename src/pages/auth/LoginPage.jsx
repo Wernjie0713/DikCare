@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import MobileContainer from '../../components/common/MobileContainer';
+import { images } from '../../assets/imageImports';
 
 function LoginPage() {
   const [email, setEmail] = useState('');
@@ -27,7 +28,7 @@ function LoginPage() {
         <div className="flex flex-col items-center mb-8">
           <div className="flex items-center justify-center w-16 h-16 relative mb-2">
             <img
-              src="/DikCare/images/DikCare Logo.png"
+              src={images.logo}
               alt="DikCare Logo"
               className="w-full h-full object-contain"
             />

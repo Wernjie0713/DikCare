@@ -1,5 +1,8 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import MobileContainer from '../components/common/MobileContainer';
+import BottomNavBar from '../components/common/BottomNavBar';
+import { images } from '../assets/imageImports';
 
 function HospitalsPage() {
   return (
@@ -30,7 +33,7 @@ function HospitalsPage() {
 
             {/* Hospital Image */}
             <div className="rounded-lg overflow-hidden mb-4">
-              <img src="/DikCare/images/Hospital.jpg" alt="Hospital" className="w-full h-auto object-cover" />
+              <img src={images.hospital} alt="Hospital" className="w-full h-auto object-cover" />
             </div>
 
             {/* Rating */}
@@ -95,7 +98,7 @@ function HospitalsPage() {
 
             {/* Map */}
             <div className="mb-8 rounded-lg overflow-hidden h-48">
-              <img src="/DikCare/images/map.jpg" alt="Map" className="w-full h-full object-cover" />
+              <img src={images.map} alt="Map" className="w-full h-full object-cover" />
             </div>
 
             {/* Write Review Button */}

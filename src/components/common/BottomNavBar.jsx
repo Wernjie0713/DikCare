@@ -1,4 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
+import { images } from '../../assets/imageImports';
 
 function BottomNavBar() {
   const location = useLocation();
@@ -21,7 +22,7 @@ function BottomNavBar() {
         </Link>
 
         <Link to="/assistant" className={`flex flex-col items-center ${location.pathname === '/assistant' ? 'text-primary' : 'text-gray-500'}`}>
-          <img src="/DikCare/robot.svg" className="w-5 h-5" alt="Assistant" />
+          <img src={images.robot} className="w-5 h-5" alt="Assistant" />
           <span className="text-xs mt-1">Assistant</span>
         </Link>
 
